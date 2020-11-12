@@ -111,6 +111,47 @@ create table Dim_ShipMethod (
 	ShipMethodName nvarchar(50) not null
 	)
 
+alter table Fact_SalesOrderDetail 
+add foreign key (ProductKey) references Dim_Product(ProductKey),
+	foreign key (SpecialOfferKey) references Dim_SpecialOffer(SpecialOfferKey),
+	foreign key (CustomerKey) references Dim_Customer(CustomerKey),
+	foreign key (SalesPersonKey) references Dim_SalesPerson(SalesPersonKey),
+	foreign key (TerritoryKey) references Dim_Territory(TerritoryKey),
+	foreign key (OrderDateKey) references Dim_Date(DateKey),
+	foreign key (ShipDateKey) references Dim_Date(DateKey),
+	foreign key (ShipToAddressKey) references Dim_Address(AddressKey),
+	foreign key (BillToAddressKey) references Dim_Address(AddressKey),
+	foreign key (ShipMethodKey) references Dim_ShipMethod(ShipMethodKey);
+
+alter Table Dim_Product 
+add foreign key (SellStartDateKey) references Dim_Date(DateKey),
+	foreign key (SellEndDateKey) references Dim_Date(DateKey),
+	foreign key (DiscontinuedDateKey) references Dim_Date(DateKey),
+	foreign key (ModifiedDateKey) references Dim_Date(DateKey);
+
+alter table Dim_Customer 
+add foreign key (ModifiedDateKey) references Dim_Date(DateKey);
+
+alter table Dim_Address 
+add foreign key (ModifiedDateKey) references Dim_Date(DateKey);
+
+alter table Dim_SpecialOffer 
+add foreign key (StartDateKey) references Dim_Date(DateKey),
+	foreign key (EndDateKey) references Dim_Date(DateKey);
+
+alter table Dim_Territory 
+add foreign key (ModifiedDateKey) references Dim_Date(DateKey);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
