@@ -1,7 +1,7 @@
 use PrototypeDW
 
 create Table Fact_SalesOrderDetail (
-	OrderDetailKey INT PRIMARY KEY,
+	OrderDetailKey INT PRIMARY KEY not null,
 	OrderKey INT NOT NULL,
 	ProductKey INT NOT NULL,
 	SpecialOfferKey INT NOT NULL,
@@ -10,43 +10,42 @@ create Table Fact_SalesOrderDetail (
 	TerritoryKey INT NOT NULL,
 	OrderDateKey INT NOT NULL,
 	ShipDateKey INT NOT NULL,
-	ShipToAddressKey INT NOT NULL,
-	BillToAddressKey INT NOT NULL,
 	ShipMethodKey INT NOT NULL,
-	UnitPrice Money NOT NULL,
-	UnitDiscount Money NOT NULL,
-	LineTotal Money NOT NULL,
+	UnitPrice Decimal NOT NULL,
+	UnitDiscount Decimal NOT NULL,
+	LineTotal Decimal NOT NULL,
 	Quantity INT NOT NULL,
-	Subtotal Money NOT NULL,
-	TaxAmount Money NOT NULL,
-	TotalDue Money NOT NULL
+	Subtotal Decimal NOT NULL,
+	TaxAmount Decimal NOT NULL,
+	TotalDue Decimal NOT NULL
 	)
 
 create Table Dim_Product (
-	ProductKey INT PRIMARY KEY,
+	ProductKey INT PRIMARY KEY not null,
 	ProductName nvarchar(50) not null,
 	MakeFlag bit not null,
 	Color nvarchar(15) not null,
-	Size nvarchar(5) not null,
+	Size INT(1,1) not null,
 	Weight decimal(8,2) not null,
 	Category nvarchar(50) not null,
 	SubCategory nvarchar(50) not null,
 	SellStartDateKey int not null,
 	SellEndDateKey int not null,
-	DiscontinuedDateKey int not null,
-	ModifiedDateKey int not null
+	DiscontinuedDateKey int not null	
 	)
 
 create table Dim_Customer (
-	CustomerKey	INT primary key,	
-	Store nvarchar(50) not null,
-	TerritoryName nvarchar(50) not null,
-	CountryName nvarchar(50) not null,
+	CustomerKey INT primary key not null,	
+	FirstName nvarchar(50) not null,
+	LastName nvarchar(50) not null,
+	FullName nvarchar(50) not null,
+	Gender nvchar(10) not null,
+	EmailPromotion INT not null,
 	ModifiedDateKey int not null,
 	)
 
 CREATE TABLE dbo.Dim_Date (
-   DateKey INT,
+   DateKey INT not null,
    Date DATE NOT NULL,
    Day TINYINT NOT NULL,
    DaySuffix CHAR(2) NOT NULL,
@@ -69,19 +68,8 @@ CREATE TABLE dbo.Dim_Date (
    PRIMARY KEY CLUSTERED ([DateKey] ASC)
    )
 
-create table Dim_Address (
-	AddressKey int primary key,
-	City nvarchar(30) not null,
-	PostalCode nvarchar(15) not null,
-	AddressLine nvarchar(132) not null,
-	StateProvenceName nvarchar(50) not null,
-	TerritoryName nvarchar(50) not null,
-	CountryName nvarchar(50) not null,
-	ModifiedDateKey int not null
-	)
-
 create table Dim_SpecialOffer (
-	SpecialOfferKey int primary key,
+	SpecialOfferKey int primary key not null,
 	Description nvarchar(255) not null,
 	DiscountPct smallmoney not null,
 	Category nvarchar(50) not null,
@@ -90,13 +78,12 @@ create table Dim_SpecialOffer (
 	)
 
 create table Dim_SalesPerson (
-	SalesPersonKey int primary key,
-	TerritoryName nvarchar(50) not null,
-	CountryName nvarchar(50) not null,
+	SalesPersonKey int primary key not null,
 	Firstname nvarchar(50) not null,
 	MiddleName nvarchar(50) not null,
 	LastName nvarchar(50) not null,
 	Fullname nvarchar(150) not null,
+	ModifiedDateKey int not null
 	)
 
 create table Dim_Territory (
@@ -119,28 +106,8 @@ add foreign key (ProductKey) references Dim_Product(ProductKey),
 	foreign key (TerritoryKey) references Dim_Territory(TerritoryKey),
 	foreign key (OrderDateKey) references Dim_Date(DateKey),
 	foreign key (ShipDateKey) references Dim_Date(DateKey),
-	foreign key (ShipToAddressKey) references Dim_Address(AddressKey),
-	foreign key (BillToAddressKey) references Dim_Address(AddressKey),
 	foreign key (ShipMethodKey) references Dim_ShipMethod(ShipMethodKey);
 
-alter Table Dim_Product 
-add foreign key (SellStartDateKey) references Dim_Date(DateKey),
-	foreign key (SellEndDateKey) references Dim_Date(DateKey),
-	foreign key (DiscontinuedDateKey) references Dim_Date(DateKey),
-	foreign key (ModifiedDateKey) references Dim_Date(DateKey);
-
-alter table Dim_Customer 
-add foreign key (ModifiedDateKey) references Dim_Date(DateKey);
-
-alter table Dim_Address 
-add foreign key (ModifiedDateKey) references Dim_Date(DateKey);
-
-alter table Dim_SpecialOffer 
-add foreign key (StartDateKey) references Dim_Date(DateKey),
-	foreign key (EndDateKey) references Dim_Date(DateKey);
-
-alter table Dim_Territory 
-add foreign key (ModifiedDateKey) references Dim_Date(DateKey);
 
 
 
