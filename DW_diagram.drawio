@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-19T11:51:05.846Z" agent="5.0 (Windows)" etag="D4SXhmp0ll_NXVXpvSFN" version="13.9.7" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-19T11:53:32.263Z" agent="5.0 (Windows)" etag="eJu1BkbPB_QvIFA8AiRj" version="13.9.7" type="github">
   <diagram name="Page-1" id="2ca16b54-16f6-2749-3443-fa8db7711227">
     <mxGraphModel dx="1126" dy="818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -11,7 +11,7 @@
           <mxGeometry x="730" y="240" width="170" height="130" as="geometry" />
         </mxCell>
         <mxCell id="PtlEcyWW_qO_h-wi1oPS-4" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Dim_Territory&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;TerritoryKey&lt;/td&gt;&lt;td&gt;INT&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Name&lt;/td&gt;&lt;td&gt;CHAR&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CountryCode&lt;br&gt;&lt;/td&gt;&lt;td&gt;CHAR&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModifiedDateKey&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
-          <mxGeometry x="730" y="520" width="170" height="90" as="geometry" />
+          <mxGeometry x="730" y="490" width="170" height="90" as="geometry" />
         </mxCell>
         <mxCell id="PtlEcyWW_qO_h-wi1oPS-5" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Dim_Product&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;ProductKey&lt;/td&gt;&lt;td&gt;INT&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Name&lt;/td&gt;&lt;td&gt;CHAR&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;MakeFlag&lt;/td&gt;&lt;td&gt;BIT&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Color&lt;br&gt;&lt;/td&gt;&lt;td&gt;CHAR&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Size&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Weight&lt;br&gt;&lt;/td&gt;&lt;td&gt;Decimal&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Category&lt;br&gt;&lt;/td&gt;&lt;td&gt;CHAR&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SubCategory&lt;br&gt;&lt;/td&gt;&lt;td&gt;CHAR&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SellStartDate&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SellEndDate&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DiscontinuedDate&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="180" y="190" width="180" height="220" as="geometry" />
@@ -20,14 +20,14 @@
           <mxGeometry x="730" y="390" width="170" height="70" as="geometry" />
         </mxCell>
         <mxCell id="PtlEcyWW_qO_h-wi1oPS-9" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Dim_ShipmentMethod&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;ShipmentMethodKey&lt;/td&gt;&lt;td&gt;INT&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ShipMethodName&lt;br&gt;&lt;/td&gt;&lt;td&gt;CHAR&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
-          <mxGeometry x="730" y="630" width="170" height="60" as="geometry" />
+          <mxGeometry x="730" y="610" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="PtlEcyWW_qO_h-wi1oPS-11" value="" style="endArrow=none;html=1;exitX=0.999;exitY=0.11;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.472;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="63liTpsfGqNSurKF5qKC-1" target="PtlEcyWW_qO_h-wi1oPS-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="360" y="590" as="sourcePoint" />
             <mxPoint x="440" y="450" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="420" y="625" />
+              <mxPoint x="420" y="570" />
               <mxPoint x="420" y="450" />
             </Array>
           </mxGeometry>
@@ -37,7 +37,7 @@
             <mxPoint x="360" y="590" as="sourcePoint" />
             <mxPoint x="420" y="453" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="420" y="625" />
+              <mxPoint x="420" y="570" />
               <mxPoint x="420" y="433" />
             </Array>
           </mxGeometry>
@@ -68,7 +68,7 @@
             <mxPoint x="700" y="590" as="targetPoint" />
             <Array as="points">
               <mxPoint x="680" y="415" />
-              <mxPoint x="680" y="543" />
+              <mxPoint x="680" y="513" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -98,12 +98,12 @@
             <mxPoint x="630" y="410" as="targetPoint" />
             <Array as="points">
               <mxPoint x="660" y="473" />
-              <mxPoint x="660" y="655" />
+              <mxPoint x="660" y="635" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="63liTpsfGqNSurKF5qKC-1" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Dim_Date&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;DateKey&lt;/td&gt;&lt;td&gt;INT&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Date&lt;/td&gt;&lt;td&gt;Date&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DayOfWeekNo&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DayOfWeekName&lt;br&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;WeekOfYear&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;WeekOfQuarter&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;MonthNo&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;MonthName&lt;br&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Year&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FiscalYear&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IsWeekend&lt;br&gt;&lt;/td&gt;&lt;td&gt;BIT&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
-          <mxGeometry x="180" y="600" width="180" height="230" as="geometry" />
+          <mxGeometry x="180" y="545" width="180" height="230" as="geometry" />
         </mxCell>
         <mxCell id="63liTpsfGqNSurKF5qKC-2" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Dim_Customer&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellspacing=&quot;0&quot; cellpadding=&quot;2&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;CustomerKey&lt;/td&gt;&lt;td&gt;INT&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Gender&lt;br&gt;&lt;/td&gt;&lt;td&gt;CHAR&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EmailPromotion&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModifiedDateKey&lt;br&gt;&lt;/td&gt;&lt;td&gt;INT&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="180" y="430" width="180" height="100" as="geometry" />
