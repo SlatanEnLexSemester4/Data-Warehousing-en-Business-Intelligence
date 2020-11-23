@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Blok2PrototypeSSAS</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>zXV6aSTvY7Gt8nBVFh3YLEJywYw=23-11-2020 12:52:2023-11-2020 12:52:20</TimeStamp>
+        <ID>
+          <String>Blok2 Prototype DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>l6yfBCAnGadqjIzxWNcKPZ6Poi8=23-11-2020 12:52:4223-11-2020 12:52:42</TimeStamp>
+        <ID>
+          <String>Blok2 Prototype DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>g/y90eA4Vqo6A5C0mcmo6PlO89E=23-11-2020 12:55:1223-11-2020 12:53:00</TimeStamp>
+        <ID>
+          <String>Dim Territory</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OC/0dMo5T67OmuGCGMSNvDMyKjA=23-11-2020 12:55:2123-11-2020 12:53:00</TimeStamp>
+        <ID>
+          <String>Dim Product</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Eys7I9l+NaFiflSaG+d2zQ1+oKE=23-11-2020 12:55:3923-11-2020 12:53:00</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>mHJwJJgPPy65L26lDHapDUtfmy4=23-11-2020 13:01:0323-11-2020 12:53:24</TimeStamp>
+        <ID>
+          <String>Dim Store</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>qhlmLUSxL+YmwJTWUTzmbKGfm/8=23-11-2020 13:01:0323-11-2020 12:53:24/p2Yq3dQGwa4qo6oQdXZUakpAvM=23-11-2020 12:53:2423-11-2020 12:53:24</TimeStamp>
+        <ID>
+          <String>Blok2 Prototype DW StoreTurnover</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>qTD2JI8De1wUrvVuHt19ym2/8UU=23-11-2020 12:55:3923-11-2020 12:53:00TwPP1CYZeOFPN6+Z2tgs+IuVDpo=23-11-2020 12:53:0023-11-2020 12:53:00</TimeStamp>
+        <ID>
+          <String>Blok2 Prototype DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>aQb/7fwap/hFujbU+qFwOxkNrpY=23-11-2020 13:01:0323-11-2020 12:59:31J5lH4VPJTjFRHg1QxzDFnrj8eO4=23-11-2020 12:59:3123-11-2020 12:59:31</TimeStamp>
+        <ID>
+          <String>Blok2 Prototype DW DoubleCube</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>K9yX0bqarEIjenM17zCPRhJenGs=23-11-2020 12:51:1223-11-2020 12:51:12</TimeStamp>
+      <ID>
+        <String>Blok2PrototypeSSAS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-11-23T12:01:08.943333Z</LastDeployed>
+</DeploymentSnapshot>
